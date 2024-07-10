@@ -384,6 +384,34 @@ const PDFViewerApplication = {
         );
       }
     }
+    if (params.has("print")) {
+      if (params.get("print") === "false") {
+        window.addEventListener(
+          "load",
+          () => {
+            document.getElementById("print")?.remove?.();
+            document.getElementById("secondaryPrint")?.remove?.();
+          },
+          {
+            once: true,
+          }
+        );
+      }
+    }
+    if (params.has("download")) {
+      if (params.get("download") === "false") {
+        window.addEventListener(
+          "load",
+          () => {
+            document.getElementById("download")?.remove?.();
+            document.getElementById("secondaryDownload")?.remove?.();
+          },
+          {
+            once: true,
+          }
+        );
+      }
+    }
   },
 
   /**

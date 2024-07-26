@@ -11,3 +11,4 @@ test/tmp/
 test/pdfs/
 web/locale/
 *~/
+terser.mjs
